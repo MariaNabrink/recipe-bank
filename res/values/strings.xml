@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReceptBanken</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_andra_sidan">AndraSidan</string>
+    <string name="title_activity_nytt_recept">NyttRecept</string>
+    <string name="title_activity_recept_lista">ReceptLista</string>
+    <string name="title_activity_synk_sida">SynkSida</string>
+    <string name="recept_banken">ReceptBanken</string>
+    <string name="skapa_recept">Skapa Recept</string>
+    <string name="sparade_recept">Dina Recept</string>
+    <string name="nytt_recept">Nytt Recept</string>
+    <string name="namn">Namn:</string>
+    <string name="ingredienser">Ingredienser:</string>
+    <string name="beskrivning">Beskrivning:</string>
+    <string name="bild">Välj Bild</string>
+    <string name="spara">Spara</string>
+    <string name="vad_vill_du_gora">Vad vill du göra?</string>
+    <string name="twitter">Twitter</string>
+    <string name="dela">Dela</string>
+    <string name="main_text">På ReceptBanken kan du skapa nya recept och på ett enkelt sätt se dina sparade recept. 
+        Du kan också dela dem via twitter och med dina vänner via mail. Visa alla du känner dina favoriträtter med hjälp 
+        av en trevlig bild som du kan lägga upp tillsammans med ditt recept.</string>
+
+    <color name="pink">#E5CCC9</color>
+
+    <string name="backa">Backa</string>
+    <string name="title_activity_recept">Recept</string>
+    <string name="dina_recept">Dina Recept</string>
+    <string name="title_activity_contact_list">ContactList</string>
+    <string name="kontakter">Kontakter</string>
+    <string name="recept">Ditt Recept</string>
+    <string name="title_activity_twitter">Twitter</string>
+    <string name="tweet">Twittra</string>
+    <string name="tillbaka">Tillbaka</string>
+
+</resources>

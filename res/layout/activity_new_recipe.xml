@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_dot"
+    tools:context="com.example.receptbanken.NewRecipe"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backToFirstPage"
+        android:paddingTop="10dp"
+        android:text="@string/backa"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Kontakter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/namn"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/Kontakter"
+        android:layout_marginTop="16dp"
+        android:text="@string/ingredienser"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Kontakter"
+        android:layout_alignBottom="@+id/Kontakter"
+        android:layout_alignRight="@+id/textViewDescribe"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/textViewIngredients"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Kontakter"
+        android:layout_below="@+id/textViewIngredients"
+        android:layout_marginTop="20dp"
+        android:text="@string/beskrivning"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/textViewDescribe"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Button01"
+        android:layout_toRightOf="@+id/Button01"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="saveToFile"
+        android:text="@string/spara"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignRight="@+id/textViewIngredients"
+        android:paddingTop="10dp"
+        android:text="@string/nytt_recept"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#65000B"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/Button01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDescribe"
+        android:layout_marginTop="20dp"
+        android:onClick="getImage"
+        android:paddingTop="10dp"
+        android:text="@string/bild"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+</RelativeLayout>

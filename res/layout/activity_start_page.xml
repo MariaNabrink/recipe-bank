@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.receptbanken.StartPage"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/border3">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kontakter"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/main_text"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Kontakter"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:paddingTop="10dp"
+        android:text="@string/recept_banken"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#65000B"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/twitterButton"
+        android:layout_below="@+id/twitterButton"
+        android:text="@string/sparade_recept"
+        android:textColor="#8B475D"
+        android:typeface="monospace" 
+        android:onClick="savedRecipes"/>
+
+    <Button
+        android:id="@+id/twitterButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="@string/skapa_recept"
+        android:textColor="#8B475D"
+        android:typeface="monospace"
+        android:onClick="newRecipe" />
+
+</RelativeLayout>
+

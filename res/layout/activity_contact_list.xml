@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_dot"
+    tools:context="com.example.receptbanken.ContactList"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/Backa"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backToFirstPage"
+        android:paddingTop="10dp"
+        android:text="@string/backa"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Kontakter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Backa"
+        android:layout_alignBottom="@+id/Backa"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/Backa"
+        android:text="@string/kontakter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#65000B"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Backa" 
+        android:transcriptMode="alwaysScroll">
+    </ListView>
+
+</RelativeLayout>
+

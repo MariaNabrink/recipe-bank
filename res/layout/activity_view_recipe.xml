@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_dot"
+    tools:context="com.example.receptbanken.ViewRecipe"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backToFirstPage"
+        android:paddingTop="10dp"
+        android:text="@string/backa"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/button5"
+        android:paddingTop="10dp"
+        android:text="@string/recept"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#65000B"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/Kontakter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="29dp"
+        android:text="@string/namn"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/twitterButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="twitterButton"
+        android:text="@string/twitter"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Kontakter"
+        android:layout_alignBottom="@+id/Kontakter"
+        android:layout_alignRight="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/twitterButton"
+        android:layout_alignRight="@+id/Kontakter"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Kontakter"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:text="@string/ingredienser"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:text="@string/beskrivning"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/twitterButton"
+        android:onClick="shareButton"
+        android:text="@string/dela"
+        android:textColor="#8B475D"
+        android:typeface="monospace" />
+
+</RelativeLayout>
